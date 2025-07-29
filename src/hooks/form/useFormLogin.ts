@@ -31,8 +31,8 @@ const useFormLogin = () => {
   } = useForm<LoginForm>({
     mode: "onBlur",
     defaultValues: {
-      email: "katya@gmail.com",
-      password: "testtest123",
+      email: "",
+      password: "",
     },
     resolver: yupResolver(validationSchema),
   });
